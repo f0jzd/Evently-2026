@@ -37,3 +37,24 @@ Följande är extra och sådant ni inte måste ha med om ni inte hinner/vill/kan
 ### Desktop
 Bilderna för designen ligger under Design mappen och innehåller bilder för de olika vyerna samt bild för hover state.
 
+
+## Code Review
+
+Kl. 13.05 Kort gemensamt möte.
+
+Kl 13.15 Möten i grupperna.
+
+Kl 14.45 Samilng i helklass.
+
+I grupp:
+
+Visa och berätta lite om:
+* En del av din kod där du fått till en responsiv lösning du är nöjd med.
+* Hur du strukturerat din html/css för att få tydlighet, läsbarhet och återanvändbar kod.
+* Har du tänkt på tillgänglighet?
+
+I helklass:
+
+Berätta i korthet:
+* Vad er grupp tyckte var svårast att få till.
+* Något ni lärde er av den här övningen.
