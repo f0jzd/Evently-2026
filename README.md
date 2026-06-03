@@ -3,7 +3,7 @@ Uppgiften är att göra en sida enligt nedanstående bilder, text och kod-stycke
 
 ## Inlämning
 * Code review är efter lunch fredagen den 12/6.
-* Senaste tiden för inlämning är kl. 8.00 fredagen den 12/6. Det som kommer efter det bedömmer vi inte om det inte finns rimliga skäl.
+* Senaste tiden för inlämning är kl. 12.00 fredagen den 12/6. Det som kommer efter det bedömmer vi inte om det inte finns rimliga skäl.
 * Ni lämnar in genom att ni skriver in en länk till ert Github-repo i ett formulär ni kommer få. OBS: Glöm ej att göra repot publikt!
 * När ni lämnat in bedömmer vi koden i det skick den är vid deadline, commits efter detta kommer ignoreras.
 * Var beredd på att förklara er kod muntligt, så se till att ni förstår vad ni gör om ni rådfrågar andra/AI.
