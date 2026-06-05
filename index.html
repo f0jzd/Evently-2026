@@ -17,13 +17,6 @@
 <body>
     <!-- SVGs -->
 
-    <!-- logo icon -->
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true">
-        <path
-            d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
-    </svg>
-
     <!-- spyglass icon -->
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -95,113 +88,178 @@
     </svg>
 
     <!-- Header -->
-    <header class="header">
-        Evently
+    <header class="header content-grid" >
 
-        Hem
-        Evenemang
-        Kategorier
-        Om oss
-        Kontakt
+        
+            <div class="nav-box">
 
-        Skapa konto
+                <div class="logo-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
+                    </svg>
+                    Evently
+                </div>
+
+
+                <div class="nav-links">
+                    <p>Hem</p>
+                    <p>Evenemang</p>
+                    <p>Kategorier</p>
+                    <p>Om oss</p>
+                    <p>Kontakt</p>
+                </div>
+
+
+                <div>Skapa konto</div>
+           
+        </div>
     </header>
 
 
     <!-- Main content -->
-    <main>
-        Upptäck. Upplev. Minns.
-
-        Hitta lokala evenemang du kommer älska
-
-        Från konserter och marknader till workshops och familjeaktiviteter. Upptäck vad som händer nära dig.
-
-        Utforska evenemang
-        Se helgens tips
-
-        Hitta rätt evenemang
-
-        Sökord
-        Kategori
-        Alla kategorier
-        Konsert
-        Marknad
-        Workshop
-        Familj
-        Sport / Hälsa
-        Datum
-        Sök evenemang
-
-        Populära evenemang
-        Se alla evenemang
-
-        Indie Night med Nova Sun
-        Konsert
-        24 maj
-        Pustervik, Göteborg
-
-        Vårmarknad i Slottsskogen
-        Marknad
-        25 maj
-        Slottsskogen, Göteborg
-
-        Keramikkurs för nybörjare
-        Workshop
-        27 maj
-        Studio Lera, Göteborg
-
-        Barnteater: Den lilla sjöjungfrun
-        Familj
-        31 maj
-        Folkteatern, Göteborg
-
-        Morgonlöpning & frukost
-        Sport
-        1 juni
-        Slottsskogen, Göteborg
+    <main class="content-grid">
 
 
-        Jazzkväll på Vasateatern
-        Konsert
-        3 juni
-        Vasateatern, Göteborg
+        
+        <section class="local-events">
+
+            <div class="flow">
+                <h2>Upptäck. Upplev. Minns.</h2>
+                <p class="event-intro__text">Hitta lokala evenemang du kommer älska</p>
+                <p>Från konserter och marknader till workshops och familjeaktiviteter. Upptäck vad som händer nära dig.</p>
+                <button>Utforska evenemang</button>
+                <button>Se helgens tips</button>
+            </div>
+
+            <div class="local-event-images">
+                <img src="https://picsum.photos/400/400?random=6" alt="About Us" class="img1">
+                <img src="https://picsum.photos/400/400?random=2" alt="About Us" class="img2">
+                <img src="https://picsum.photos/400/400?random=3" alt="About Us" class="img3">
+            </div>
+
+            
+        </section>
+    
 
 
-        Gratis & prisvärt
-        Hitta massor av evenemang som är gratis eller snälla mot plånboken.
+
+    
+        <section class="full-width">
+
+            <h2>Hitta rätt evenemang</h2>
+
+            <div class="form-styling">
+
+                <div class="form-group">
+                    <label for="text">Sökord</label>
+                    <input type="text" placeholder="Sök på te.x. konsert, yoga...">
+                </div>
+                <div class="form-group">
+                    <label for="date">Datum</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label for="topic">Kategori</label>
+                    <select id="topic" name="topic">
+                        <option value="" disabled selected>Välj ett alternativ</option>
+                        <option value="account">Konto</option>
+                        <option value="payment">Betalning</option>
+                        <option value="technicla">Tekniskt problem</option>
+                    </select>
+                </div>
+
+            <a href=""><button>BONJOIUR</button></a>
+
+            </div>
+
+            
+        </section>
+        
+        
+        <div>
+            Alla kategorier
+            Konsert
+            Marknad
+            Workshop
+            Familj
+            Sport / Hälsa
+            Sök evenemang
+        </div>
+    
+        <section>
+            Populära evenemang
+            Se alla evenemang
+            Indie Night med Nova Sun
+            Konsert
+            24 maj
+            Pustervik, Göteborg
+            Vårmarknad i Slottsskogen
+            Marknad
+            25 maj
+            Slottsskogen, Göteborg
+            Keramikkurs för nybörjare
+            Workshop
+            27 maj
+            Studio Lera, Göteborg
+            Barnteater: Den lilla sjöjungfrun
+            Familj
+            31 maj
+            Folkteatern, Göteborg
+            Morgonlöpning & frukost
+            Sport
+            1 juni
+            Slottsskogen, Göteborg
+            Jazzkväll på Vasateatern
+            Konsert
+            3 juni
+            Vasateatern, Göteborg
+        </section>
+       
 
 
-        För alla åldrar
-        Aktiviteter för både stora och små - hitta något som passar hela familjen.
-
-        Nära dig
-        Upptäck evenemang i ditt område och stöd lokala arrangörer.
+        <section>
+            Gratis & prisvärt
+            Hitta massor av evenemang som är gratis eller snälla mot plånboken.
+            För alla åldrar
+            Aktiviteter för både stora och små - hitta något som passar hela familjen.
+            Nära dig
+            Upptäck evenemang i ditt område och stöd lokala arrangörer.
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        Evently
-        Evently samlar lokala evenemang så att du enkelt kan upptäcka, planera och dela upplevelser som berikar din
-        vardag.
+    <footer class="content-grid">
+        <div>
+            Evently
+            Evently samlar lokala evenemang så att du enkelt kan upptäcka, planera och dela upplevelser som berikar din
+            vardag.
+        </div>
 
 
-        Utforska
-        Alla evenemang
-        Kategorier
-        Helgens tips
-        Populära
+        <div>
+            Utforska
+            Alla evenemang
+            Kategorier
+            Helgens tips
+            Populära
+        </div>
 
-        Om Evently
-        Om oss
-        För arrangörer
-        Vanliga frågor
-        Nyheter
+        <div>
+            Om Evently
+            Om oss
+            För arrangörer
+            Vanliga frågor
+            Nyheter
+        </div>
 
-        Kontakt
-        info@evently.se
-        031-123 45 67
-        Stora Badhusgatan 18
-        411 21 Göteborg
+        <div>
+            Kontakt
+            info@evently.se
+            031-123 45 67
+            Stora Badhusgatan 18
+            411 21 Göteborg
+        </div>
     </footer>
 
 </body>
