@@ -38,59 +38,65 @@
     
 
     <!-- Header -->
-    <header class="header content-grid" >
-
-        
-            <div class="nav-box">
-                <div class="logo-container">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true">
-                        <path d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
-                    </svg>
-                    Evently
-                </div>
-
-                <div class="nav-links">
-                    <a href="">Hem</a>
-                    <a href="">Evenemang</a>
-                    <a href="">Kategorier</a>
-                    <a href="">Om oss</a>
-                    <a href="">Kontakt</a>
-                </div>                
-                <div class="nav-login">
+    <header class="header content-grid">
+    
+        <div class="nav-box">
+    
+            <a href="" class="logo-container" aria-label="Evently startsida">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                        d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
+                </svg>
+                Evently
+            </a>
+    
+            <nav aria-label="huvudmeny">
+                <ul class="nav-links">
+                    <li><a href="">Hem</a></li>
+                    <li><a href="">Evenemang</a></li>
+                    <li><a href="">Kategorier</a></li>
+                    <li><a href="">Om oss</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="nav-login">
+                <button type="button" aria-label="Sök" class="button-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
-                     <a href="" class="--primary">Skapa konto</a>
-                     
-                     
-                    
-                    
-                     
-                    </div>
-                    <div class="burger-menu">
-                        <button class="hamburger" id="openMenu">
-                            <!-- hamburger icon -->
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <line x1="4" y1="12" x2="20" y2="12"></line>
-                                <line x1="4" y1="6" x2="20" y2="6"></line>
-                                <line x1="4" y1="18" x2="20" y2="18"></line>
-                            </svg>
-                        </button>
-                        <div id="backdrop" class="backdrop"></div>
-                        <aside id="sidebar" class="sidebar">
-                            <button id="closeMenu">✕</button>
-                            <nav>
-                                <a href="#">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
-                                <a href="#">Contact</a>
-                            </nav>
-                        </aside>
-                    </div>
+                </button>
+                <a href="" class="--primary">Skapa konto</a>
+    
+    
+            </div>
+            <div class="burger-menu">
+                <button class="hamburger" id="openMenu" aria-label="Öppna meny" aria-controls="sidebar"
+                    aria-expanded="false">
+                    <!-- hamburger icon -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                </button>
+                <div id="backdrop" class="backdrop"></div>
+                <aside id="sidebar" class="sidebar" inert>
+                    <button id="closeMenu" aria-label="stäng meny">✕</button>
+                    <nav aria-label="Mobilmeny">
+                        <ul>
+                            <li><a href="">Hem</a></li>
+                            <li><a href="">Evenemang</a></li>
+                            <li><a href="">Kategorier</a></li>
+                            <li><a href="">Om oss</a></li>
+                            <li><a href="">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
         </div>
     </header>
 
@@ -98,12 +104,10 @@
     <!-- Main content -->
     <main class="content-grid flow">
 
-
-        
         <section class="local-events">
 
             <div class="flow">
-                <h2>UPPTÄCK. UPPLEV. MINNS.</h2>
+                <span class="event-tag">UPPTÄCK. UPPLEV. MINNS.</span>
                 <h1 class="event-intro__text">Hitta lokala evenemang du kommer älska</h1>
                 <p>Från konserter och marknader till workshops och familjeaktiviteter. Upptäck vad som händer nära dig.</p>
                 
@@ -112,11 +116,11 @@
                 
             </div>
 
-            <div class="local-event-images">
-                <img src="https://picsum.photos/400/400?random=6" alt="Photo from one of the featured events" class="img1"> <!--Alt text to specific image?-->
-                <img src="https://picsum.photos/400/400?random=2" alt="Photo from one of the featured events" class="img2">
-                <img src="https://picsum.photos/400/400?random=3" alt="Photo from one of the featured events" class="img3">
-            </div>
+            <figure class="local-event-images">
+                <img src="https://picsum.photos/400/400?random=6" alt="" class="img1">
+                <img src="https://picsum.photos/400/400?random=2" alt="" class="img2">
+                <img src="https://picsum.photos/400/400?random=3" alt="" class="img3">
+            </figure>
 
             
         </section>
@@ -127,10 +131,11 @@
     
         <section class="full-width find-event flow">
 
-            <h2>Hitta rätt evenemang</h2>
+            <h2 id="search-title">Hitta rätt evenemang</h2>
 
-            <div class="form-styling">
+            <form class="form-styling" role="search" aria-labelledby="search-title">
 
+                
                 <div class="form-group">
                     <label for="searchword">Sökord</label>
                     <input type="text" id="searchword" placeholder="Sök på te.x. konsert, yoga..." name="searchword">
@@ -148,12 +153,12 @@
                 </div>
                 <div class="form-group">
                     <label for="date">Datum</label>
-                    <input type="date" id="date" name="id">
+                    <input type="date" id="date" name="date">
                 </div>
 
-            <a href="" class="--primary">Sök evenemang</a>
+                <button class="--primary">Sök evenemang</button>
 
-            </div>
+            </form>
 
             
         </section>
@@ -175,36 +180,36 @@
                         <img src="https://picsum.photos/400/200?random=6"
                         alt="A photo of the concert experience from the audience perspective">
                         <div class="card-text">
-                            <div class="card-intro intro-type-concert">
-                                <h3>Konsert</h3>
-                                <span>24 maj</span>
+                            <div class="card-intro">
+                                <span class="card-category intro-type-concert">Konsert</span>
+                                <time datetime="2026-05-24" class="card-date">24 maj</time>
                             </div>
-                            <h2>Indie Night med Nova Sun</h2>
+                            <h3>Indie Night med Nova Sun</h3>
                             <span>Pustervik, Göteborg</span>
                         </div>
                     </a>   
 
-                    <div class="card-icon" id="icon"><!-- heart icon -->
+                    <button class="card-icon" id="icon"><!-- heart icon -->
                         <svg class="icon" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" aria-hidden="true">
+                            stroke-linejoin="round" fill="currentColor" stroke="currentColor" aria-hidden="true">
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
                         </svg>
-                    </div>
+                    </button>
                     
                 </article>
 
                 <article>
 
                     <a href="" class="card">
-                        <img src="https://picsum.photos/400/200?random=5" alt="Some things that might be found at the market">
+                        <img src="https://picsum.photos/400/200?random=5" alt="Bilder på morötter som någon sålde under marknaden.">
                         <div class="card-text">
-                            <div class="card-intro intro-type-market">
-                                <h3>Marknad</h3>
-                                <span>25 maj</span>
+                            <div class="card-intro">
+                                <span class="card-category intro-type-market">Marknad</span>
+                                <time datetime="2026-05-25" class="card-date" >25 maj</time>
                             </div>
-                            <h2>Vårmarknad i Slottsskogen</h2>
+                            <h3>Vårmarknad i Slottsskogen</h3>
                             <span>Slottsskogen, Göteborg</span>
                         </div>
                     </a>
@@ -214,13 +219,13 @@
                 <article>
 
                     <a href="" class="card">
-                        <img src="https://picsum.photos/400/200?random=4" alt="An example of what someone has created during the workshop">
+                        <img src="https://picsum.photos/400/200?random=4" alt="En kruka som något hade lyckats skapa.">
                         <div class="card-text">
-                            <div class="card-intro intro-type-workshop">
-                                <h3>Workshop</h3>
-                                <span>27 maj</span>
+                            <div class="card-intro">
+                                <span class="card-category intro-type-workshop">Workshop</span>
+                                <time datetime="2026-05-27" class="card-date">27 maj</time>
                             </div>
-                            <h2>Keramikkurs för nybörjare</h2>
+                            <h3>Keramikkurs för nybörjare</h3>
                             <span>Studio Lera, Göteborg</span>
                         </div>
                     </a>
@@ -229,13 +234,13 @@
 
                 <article>
                     <a href="" class="card">
-                        <img src="https://picsum.photos/400/200?random=3" alt="a photo from during the performance">
+                        <img src="https://picsum.photos/400/200?random=3" alt="Scenen under föreställning, med lilla sjöjungfrun i centern ">
                         <div class="card-text">
-                            <div class="card-intro intro-type-family">
-                                <h3>Familj</h3>
-                                <span>31 maj</span>
+                            <div class="card-intro">
+                                <span class="card-category intro-type-family">Familj</span>
+                                <time datetime="2026-05-31" class="card-date">31 maj</time>
                             </div>
-                            <h2>Barnteater: Den lilla sjöjungfrun</h2>
+                            <h3>Barnteater: Den lilla sjöjungfrun</h3>
                             <span>Folkteatern, Göteborg</span>
                         </div>
                     </a>
@@ -243,13 +248,13 @@
 
                 <article>
                     <a href="" class="card">
-                        <img src="https://picsum.photos/400/200?random=2" alt="Someone out for a run during the event">
+                        <img src="https://picsum.photos/400/200?random=2" alt="Person som tar del av eventen och är ute och löper">
                         <div class="card-text">
-                            <div class="card-intro intro-type-sport">
-                                <h3>Sport</h3>
-                                <span>1 juni</span>
+                            <div class="card-intro">
+                                <span class="card-category intro-type-sport">Sport</span>
+                                <time datetime="2026-06-01" class="card-date">1 juni</time>
                             </div>
-                            <h2>Morgonlöpning & frukost</h2>
+                            <h3>Morgonlöpning & frukost</h3>
                             <span>Slottsskogen, Göteborg</span>
                         </div>
                     </a>
@@ -258,13 +263,13 @@
                 <article>
 
                     <a href="" class="card">
-                        <img src="https://picsum.photos/400/200?random=1" alt="A photo of the performance from the audience perspective">
+                        <img src="https://picsum.photos/400/200?random=1" alt="Publiken under jazzkonserten i Göteborg.">
                         <div class="card-text">
-                            <div class="card-intro intro-type-concert">
-                                <h3>Konsert</h3>
-                                <span>3 juni</span>
+                            <div class="card-intro">
+                                <span class="card-category intro-type-concert">Konsert</span>
+                                <time datetime="2026-06-03" class="card-date">3 juni</time>
                             </div>
-                            <h2>Jazzkväll på Vasateatern</h2>
+                            <h3>Jazzkväll på Vasateatern</h3>
                             <span>Vasateatern, Göteborg</span>
                         </div>
                     </a>
@@ -395,30 +400,30 @@
             <div class="footer-links">
                 <h3>Utforska</h3>
                     <ul>
-                        <a href=""><li class="footer-link">Alla evenemang</li></a>
-                        <a href=""><li class="footer-link">Kategorier</li></a>
-                        <a href=""><li class="footer-link">Helgens tips</li></a>
-                        <a href=""><li class="footer-link">Populära</li></a>
+                        <a href=""><li class="page-link">Alla evenemang</li></a>
+                        <a href=""><li class="page-link">Kategorier</li></a>
+                        <a href=""><li class="page-link">Helgens tips</li></a>
+                        <a href=""><li class="page-link">Populära</li></a>
                     </ul>
             </div>
 
             <div class="footer-links">
                 <h3>Om Evently</h3>
                 <ul class="footer-list">
-                    <a href=""><li class="footer-link">Om oss</li></a>
-                    <a href=""><li class="footer-link">För arrangörer</li></a>
-                    <a href=""><li class="footer-link">Vanliga frågor</li></a>
-                    <a href=""><li class="footer-link">Nyheter</li></a>
+                    <a href=""><li class="page-link">Om oss</li></a>
+                    <a href=""><li class="page-link">För arrangörer</li></a>
+                    <a href=""><li class="page-link">Vanliga frågor</li></a>
+                    <a href=""><li class="page-link">Nyheter</li></a>
                 </ul> 
             </div>
 
             <div class="footer-links">
                 <h3>Kontakt</h3>
                     <ul>
-                        <a href=""><li class="footer-link">info@evently.se</li></a>
-                        <a href=""><li class="footer-link">031-123 45 67</li></a>
-                        <a href=""><li class="footer-link">Stora Badhusgatan 18</li></a>
-                        <a href=""><li class="footer-link">411 21 Göteborg</li></a>
+                        <a href=""><li class="page-link">info@evently.se</li></a>
+                        <a href=""><li class="page-link">031-123 45 67</li></a>
+                        <a href=""><li class="page-link">Stora Badhusgatan 18</li></a>
+                        <a href=""><li class="page-link">411 21 Göteborg</li></a>
                     </ul>
             </div>
             
