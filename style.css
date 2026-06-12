@@ -387,7 +387,7 @@ article {
 
 .local-events {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: start;
 
     min-width: 0;
