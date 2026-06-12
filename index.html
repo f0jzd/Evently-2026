@@ -40,9 +40,9 @@
     <!-- Header -->
     <header class="header content-grid">
     
-        <div class="nav-box">
+        <div class="nav-box flex-between my-6">
     
-            <a href="" class="logo-container" aria-label="Evently startsida">
+            <a href="" class="flex-center" aria-label="Evently startsida">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true">
                     <path
@@ -60,7 +60,7 @@
                     <li><a href="">Kontakt</a></li>
                 </ul>
             </nav>
-            <div class="nav-login">
+            <div class="nav-login flex-center">
                 <button type="button" aria-label="Sök" class="button-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -68,7 +68,7 @@
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                 </button>
-                <a href="" class="--primary">Skapa konto</a>
+                <a href="" class="link --primary">Skapa konto</a>
     
     
             </div>
@@ -102,17 +102,19 @@
 
 
     <!-- Main content -->
-    <main class="content-grid flow">
+    <main class="content-grid flow flow-space-xl">
 
         <section class="local-events">
 
             <div class="flow">
-                <span class="event-tag">UPPTÄCK. UPPLEV. MINNS.</span>
-                <h1 class="event-intro__text">Hitta lokala evenemang du kommer älska</h1>
+                <span class="event-tag font-bold text-base">UPPTÄCK. UPPLEV. MINNS.</span>
+                <h1 class="event-intro__text font-bold">Hitta lokala evenemang du kommer älska</h1>
                 <p>Från konserter och marknader till workshops och familjeaktiviteter. Upptäck vad som händer nära dig.</p>
                 
-                <a href="" class="--primary">Utforska evenemang</a>
-                <a href="" class="--secondary">Se helgens tips</a>
+                <div class="local-event-links">
+                    <a href="" class="link --primary">Utforska evenemang</a>
+                    <a href="" class="link --secondary">Se helgens tips</a>
+                </div>
                 
             </div>
 
@@ -129,19 +131,19 @@
 
 
     
-        <section class="full-width find-event flow">
+        <section class="full-width find-event flow py-10">
 
-            <h2 id="search-title">Hitta rätt evenemang</h2>
+            <h2 id="search-title" class ="text-2xl font-bold">Hitta rätt evenemang</h2>
 
             <form class="form-styling" role="search" aria-labelledby="search-title">
 
                 
                 <div class="form-group">
-                    <label for="searchword">Sökord</label>
+                    <label for="searchword" class="font-semibold">Sökord</label>
                     <input type="text" id="searchword" placeholder="Sök på te.x. konsert, yoga..." name="searchword">
                 </div>
                 <div class="form-group">
-                    <label for="topic">Kategori</label>
+                    <label for="topic" class="font-semibold">Kategori</label>
                     <select id="topic" name="topic">
                         <option value="" disabled selected>Alla kategorier</option>
                         <option value="concert">Konsert</option>
@@ -152,11 +154,11 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="date">Datum</label>
+                    <label for="date" class="font-semibold">Datum</label>
                     <input type="date" id="date" name="date">
                 </div>
 
-                <button class="--primary">Sök evenemang</button>
+                <a href=""class="link --primary">Sök evenemang</a>
 
             </form>
 
@@ -168,8 +170,8 @@
     
         <section class="popular-events">
             <div class="popular-events__intro">
-                <h2>Populära evenemang</h2>
-                <a href="">Se alla evenemang ➜</a>
+                <h2 class="font-bold text-4xl">Populära evenemang</h2>
+                <a href="" class="font-bold">Se alla evenemang ➜</a>
             </div>
 
             <div class="event-cards">
@@ -181,10 +183,10 @@
                         alt="A photo of the concert experience from the audience perspective">
                         <div class="card-text">
                             <div class="card-intro">
-                                <span class="card-category intro-type-concert">Konsert</span>
+                                <span class="font-semibold card-category intro-type-concert">Konsert</span>
                                 <time datetime="2026-05-24" class="card-date">24 maj</time>
                             </div>
-                            <h3>Indie Night med Nova Sun</h3>
+                            <h3 class="font-semibold text-xl">Indie Night med Nova Sun</h3>
                             <span>Pustervik, Göteborg</span>
                         </div>
                     </a>   
@@ -206,10 +208,10 @@
                         <img src="https://picsum.photos/400/200?random=5" alt="Bilder på morötter som någon sålde under marknaden.">
                         <div class="card-text">
                             <div class="card-intro">
-                                <span class="card-category intro-type-market">Marknad</span>
+                                <span class="font-semibold card-category intro-type-market">Marknad</span>
                                 <time datetime="2026-05-25" class="card-date" >25 maj</time>
                             </div>
-                            <h3>Vårmarknad i Slottsskogen</h3>
+                            <h3 class="font-semibold text-xl">Vårmarknad i Slottsskogen</h3>
                             <span>Slottsskogen, Göteborg</span>
                         </div>
                     </a>
@@ -222,10 +224,10 @@
                         <img src="https://picsum.photos/400/200?random=4" alt="En kruka som något hade lyckats skapa.">
                         <div class="card-text">
                             <div class="card-intro">
-                                <span class="card-category intro-type-workshop">Workshop</span>
+                                <span class="font-semibold card-category intro-type-workshop">Workshop</span>
                                 <time datetime="2026-05-27" class="card-date">27 maj</time>
                             </div>
-                            <h3>Keramikkurs för nybörjare</h3>
+                            <h3 class="font-semibold text-xl">Keramikkurs för nybörjare</h3>
                             <span>Studio Lera, Göteborg</span>
                         </div>
                     </a>
@@ -237,10 +239,10 @@
                         <img src="https://picsum.photos/400/200?random=3" alt="Scenen under föreställning, med lilla sjöjungfrun i centern ">
                         <div class="card-text">
                             <div class="card-intro">
-                                <span class="card-category intro-type-family">Familj</span>
+                                <span class="font-semibold card-category intro-type-family">Familj</span>
                                 <time datetime="2026-05-31" class="card-date">31 maj</time>
                             </div>
-                            <h3>Barnteater: Den lilla sjöjungfrun</h3>
+                            <h3 class="font-semibold text-xl">Barnteater: Den lilla sjöjungfrun</h3>
                             <span>Folkteatern, Göteborg</span>
                         </div>
                     </a>
@@ -251,10 +253,10 @@
                         <img src="https://picsum.photos/400/200?random=2" alt="Person som tar del av eventen och är ute och löper">
                         <div class="card-text">
                             <div class="card-intro">
-                                <span class="card-category intro-type-sport">Sport</span>
+                                <span class="font-semibold card-category intro-type-sport">Sport</span>
                                 <time datetime="2026-06-01" class="card-date">1 juni</time>
                             </div>
-                            <h3>Morgonlöpning & frukost</h3>
+                            <h3 class="font-semibold text-xl">Morgonlöpning & frukost</h3>
                             <span>Slottsskogen, Göteborg</span>
                         </div>
                     </a>
@@ -266,10 +268,10 @@
                         <img src="https://picsum.photos/400/200?random=1" alt="Publiken under jazzkonserten i Göteborg.">
                         <div class="card-text">
                             <div class="card-intro">
-                                <span class="card-category intro-type-concert">Konsert</span>
+                                <span class="font-semibold card-category intro-type-concert">Konsert</span>
                                 <time datetime="2026-06-03" class="card-date">3 juni</time>
                             </div>
-                            <h3>Jazzkväll på Vasateatern</h3>
+                            <h3 class="font-semibold text-xl">Jazzkväll på Vasateatern</h3>
                             <span>Vasateatern, Göteborg</span>
                         </div>
                     </a>
@@ -284,7 +286,7 @@
         <section class="reasoning full-width">
    
             
-            <div class="reasoning-cards">
+            <div class="reasoning-cards py-10">
 
                 <div class="reasoning-card">
                     <div class="reasoning-card-icon">
@@ -297,7 +299,7 @@
                             </svg>
                     </div>
                     <div class="reasoning-card-text">
-                        <h2>Gratis & prisvärt</h2>
+                        <h2 class="text-xl font-bold">Gratis & prisvärt</h2>
                         <p>Hitta massor av evenemang som är gratis eller snälla mot plånboken.</p>
                     </div>
                 </div>
@@ -313,8 +315,8 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                             </svg>
                     </div>
-                    <div>
-                        <h2>För alla åldrar</h2>
+                    <div  class="reasoning-card-text">
+                        <h2 class="text-xl font-bold">För alla åldrar</h2>
                         <p>Aktiviteter för både stora och små - hitta något som passar hela familjen.</p>
                     </div>
                 </div>
@@ -328,8 +330,8 @@
                                 <circle cx="12" cy="10" r="3"></circle>
                         </svg>
                     </div>
-                    <div>
-                        <h2>Nära dig</h2>
+                    <div class="reasoning-card-text">
+                        <h2 class="text-xl font-bold">Nära dig</h2>
                         <p>Upptäck evenemang i ditt område och stöd lokala arrangörer.</p>
                     </div>
                 </div>
@@ -343,11 +345,11 @@
     <!-- Footer -->
     <footer class="content-grid full-width">
         
-        <div class="site-footer flow">
+        <div class="site-footer my-10 flow">
 
             
             <div class="footer-brand">
-                <div class="footer-intro">
+                <div class="footer-intro flow">
                     <div class="footer-logo">
                         <svg class="logo-icon"
                             viewBox="0 0 24 24" 
@@ -356,7 +358,7 @@
                             aria-hidden="true">
                             <path d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
                         </svg>
-                        <span>Evently</span>
+                        <span class="text-4xl font-semibold">Evently</span>
                     </div>
 
                     <p>
@@ -398,7 +400,7 @@
 
             
             <div class="footer-links">
-                <h3>Utforska</h3>
+                <h3 class="font-bold uppercase">Utforska</h3>
                     <ul>
                         <a href=""><li class="page-link">Alla evenemang</li></a>
                         <a href=""><li class="page-link">Kategorier</li></a>
@@ -408,7 +410,7 @@
             </div>
 
             <div class="footer-links">
-                <h3>Om Evently</h3>
+                <h3 class="font-bold uppercase">Om Evently</h3>
                 <ul class="footer-list">
                     <a href=""><li class="page-link">Om oss</li></a>
                     <a href=""><li class="page-link">För arrangörer</li></a>
@@ -418,7 +420,7 @@
             </div>
 
             <div class="footer-links">
-                <h3>Kontakt</h3>
+                <h3 class="font-bold uppercase">Kontakt</h3>
                     <ul>
                         <a href=""><li class="page-link">info@evently.se</li></a>
                         <a href=""><li class="page-link">031-123 45 67</li></a>
